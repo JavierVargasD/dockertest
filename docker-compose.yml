@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+
+  db:
+    image: posgres16
+    build:
+      dockerfile: Dockerfile
+      args:
+        PG_PASSWORD: ${PG_LOCAL_PASSWORD}
